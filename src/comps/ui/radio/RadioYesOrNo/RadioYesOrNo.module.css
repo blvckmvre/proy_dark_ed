@@ -1,0 +1,27 @@
+.RadioWrapper{
+    border-radius: 5px;
+    background-color: darkolivegreen;
+    display: flex;
+    justify-content: space-between;
+}
+.RadioInp{
+    opacity:0;
+    width:1px;
+}
+.RadioLab{
+    cursor: pointer;
+    display: block;
+    font-size: 0.8em;
+    padding: 5px;
+    text-align: center;
+    opacity: 1;
+    flex:1;
+    border-radius: 5px;
+}
+.RadioLab:hover {
+    color: palegreen;
+}
+.RadioLabChecked{
+    background-color: rgb(73, 88, 46);
+    box-shadow: 0 0 4px 2px rgb(87, 158, 87);
+}

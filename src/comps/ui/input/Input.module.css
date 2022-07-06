@@ -1,0 +1,15 @@
+.Inp{
+    background: none;
+    border: 2px solid whitesmoke;
+    outline: none;
+    padding: 5px;
+}
+.Inp::placeholder {
+    color: palegreen;
+}
+.Inp:focus{
+    box-shadow: 0 0 4px 4px palegreen;
+}
+.Inp:disabled{
+    background-color: rgba(255,0,0,0.3);
+}

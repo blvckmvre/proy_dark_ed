@@ -1,0 +1,13 @@
+.Btn {
+    padding: 10px;
+    background:none;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+}
+.Btn:hover{
+    border-color: palegreen;
+    color: palegreen;
+}
+.Btn:disabled{
+    background-color: rgba(255,0,0,0.3);
+}

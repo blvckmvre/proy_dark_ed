@@ -1,0 +1,98 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    color: snow;
+}
+body{
+    background-color: #202020;
+}
+.nopointer{
+    pointer-events: none;
+}
+#title{
+    margin-bottom: 20px;
+    padding: 20px 0;
+    width:100%;
+    text-align: center;
+    color: palegreen;
+    background: linear-gradient(dimgray, #404040);
+    text-shadow: 0 0 5px rgba(0,0,0,0.8);
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.App__child {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #404040;
+}
+.Form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Pool{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Pool__child{
+    display: flex;
+    flex-direction: column;
+}
+.pool {
+    height: 300px;
+    max-height: 300px;
+    max-width: 300px;
+    overflow: auto;
+    background-color: darkgray;
+}
+.pool__item{
+    margin: 5px auto;
+    padding: 5px;
+    color: #202020;
+    cursor: pointer;
+}
+.pool__item__current{
+    background-color: palegreen;
+}
+.pool__item:hover{
+    background-color: whitesmoke;
+}
+.desc{
+    background-color: dimgray;
+    font-family: monospace;
+    padding: 0 5px;
+    color: palegreen;
+}
+.warn{
+    outline: solid 5px crimson !important;
+    animation-name: warn;
+    animation-duration: 0.07s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+@keyframes warn{
+    0%{
+        position: relative;
+        left:5px;
+    }
+    100%{
+        position: relative;
+        left: -5px;
+    }
+  
+}
+.result{
+    height: 20px;
+    color: palegreen;
+    border-bottom: 1px solid snow;
+}
