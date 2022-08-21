@@ -11,9 +11,11 @@
   "build": {
     "appId": "com.blvckmvre.app",
     "mac": {
-      "icon": "public/flake.icns"
+      "icon": "public/proy.icns"
     },
-    "asar": false
+    "win": {
+      "icon": "public/proy.ico"
+    }
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -31,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron": "electron .",
-    "electron-build": "electron-builder",
+    "electron-build": "electron-builder -mw",
     "build": "npm run react-build && npm run electron-build"
   },
   "eslintConfig": {
